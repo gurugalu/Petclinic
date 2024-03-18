@@ -19,12 +19,7 @@ pipeline {
                 sh "mvn clean package"
             }
         }
-        stage('deploy to tomcat') {
-            steps {
-                sh "cp /home/guru/.jenkins/workspace/declartive/target/*.war /opt/apache-tomcat-9.0.65/webapps/"
-            }
-        }
-        
+                
     }
 }
 
