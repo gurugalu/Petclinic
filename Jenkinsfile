@@ -6,9 +6,9 @@ pipeline {
         maven 'mvn3'
     }
     
-    // environment {
-    //     SCANNER_HOME=tool 'sonar-scanner'
-    // }
+    environment {
+        SCANNER_HOME=tool 'SonarQubeServer'
+    }
     
     stages{
         
